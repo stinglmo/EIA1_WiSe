@@ -8,7 +8,7 @@ h2 {
     font-family: sans-serif;
     font-size: 200px;
     margin-top: 0%;
-    margin-left: 300px;
+    margin-left: 460px;
 }
 
 a {
@@ -19,9 +19,9 @@ a {
 li {
     color: none;
     text-decoration: none;
-    background: black;
     list-style: none;
     padding: 10px 10px 10px 10px;
+    
 }
 
 .Nav-bar {
@@ -30,21 +30,24 @@ li {
     top: 0%;
     right: 10%;
     padding: 0%;
+    border-radius: 0px 0px 10px 10px;
+    
 }
 
 .Nav-bar-list {
     display: flex;
     padding: 0;
     margin: 0;
+    
 }
 
 .Loremipsum {
-    margin: 10px 10px 100px 50px;
-    margin-top: 20px;
-    font-size: 300;
+    padding-top: 600px;
+    padding-left: 400px;
+    font-size: 80px;
     color: white;
     font-family: sans-serif;
-    padding: 10px 10px 10px 10px;
+    line-height: none;
 
 }
 
@@ -53,28 +56,99 @@ li {
     border-radius: 50%;
     height: 1000px;
     width: 1000px;
-    margin-top: -400px;
+    margin-top: -800px;
     margin-left: 300px;
-   
-
 }
 
 .Kreisinhalt {
     color: white;
     text-align: left;
     width: 400px;
-    height: 200px;
-    margin: 100px 10px 50px 10px;
-    padding: 10px 10px 10px 10px;
+    margin-top: -120px;
+    margin-left: 400px;
+
 }
 
 h3 {
     text-align: center;
 }
 
-.I-Icon {
-    background-color: black;
+.I-Logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 400px;
+    margin-top: 30px;
+   
 }
+
+.Fotos {
+    display: block;
+    width: 800px;
+    margin-left: 300px;
+    margin-right: 200px;
+    
+}
+
+.Animation {
+    display: block;
+    width: 800px;
+    margin-left: 300px;
+    margin-right: 200px;
+}
+
+h1 {
+    color: rgb(184, 75, 25) ;
+    margin-left: 300px;
+}
+
+/*Kontakt*/
+
+.Kontakt {
+    width: 300px;
+    margin-left: 300px;
+    margin-top: 700px;
+
+}
+
+.p2 {
+    width: 100px;
+    background-color: rgb(185, 182, 182);
+    color: white;
+
+
+}
+
+.Formular p {
+    color: rgb(185, 182, 182);
+}
+
+.button {
+    color: white;
+    background-color:  rgb(185, 182, 182);
+}
+
+.Kontakt h1 {
+    color: rgb(184, 75, 25) ;
+    margin-left: -100px;
+}
+
+.Formular {
+    width: 900px;
+    height: 100px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+input[type=text] {
+    width: 500px;
+    padding: 7px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgb(214, 212, 212);
+}
+
+
 
 
 /*So kann ich mir Notizen aufschreiben*/
