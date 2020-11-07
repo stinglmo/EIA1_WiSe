@@ -177,5 +177,20 @@ input[type=text] {
     margin-top: -350px;
 }
 
+/*Test: Schauen ob die aktuelle Seite angezeigt wird*/
+
+.AktuelleSeite {
+    background-color: rgb(96, 112, 51);
+    border-bottom-left-radius: 1ch;
+}
+
+.AktuelleSeite2 {
+    background-color: rgb(96, 112, 51);
+}
+
+.AktuelleSeite3 {
+    background-color: rgb(96, 112, 51);
+    border-bottom-right-radius: 1ch;
+}
 
 /*So kann ich mir Notizen aufschreiben*/
