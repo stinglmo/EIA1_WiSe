@@ -150,7 +150,7 @@ h1 {
 
 input[type=text] {
     width: 500px;
-    padding: 7px 20px;
+    padding: 7px 20px; /*oben und unten*/
     margin: 5px 0;
     box-sizing: border-box;
     color: white;

@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("Images/bg.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.Karte {
+    position: relative;
+   
+}
+
+.Zweig {
+    position: absolute;
+    top: -50px;
+    left: -70px;
+}
+
+.Pinguin {
+    position: absolute;
+    top: 210px;
+    left: 450px;
+    
+}
+
+.MerryChristmas {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    color:white;
+    text-align: center;
+    font-family: fantasy;
+    
+}
+
+.Text {
+    color: white;
+    width: 400px;
+    font-family: Verdana;
+    position: absolute;
+    left: 50px;
+    top: 190px;
+    font-size: 100%;
+}

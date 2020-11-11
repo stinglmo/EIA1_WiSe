@@ -1,0 +1,44 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("Images/bg.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.Karte {
+    position: relative;
+   
+}
+
+h1 {
+    color: white;
+}
+
+input[type=text] {
+    color: grey;
+    width: 300px;
+}
+
+
+h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.Formular {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+}
+
+.Nachricht {
+   padding: 100px;
+   padding-left: 0%;
+   padding-top: 0%;
+   width: 100px;
+}
