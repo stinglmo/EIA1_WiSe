@@ -42,3 +42,20 @@ h2 {
    padding-top: 0%;
    width: 100px;
 }
+
+
+   
+input [type="radio"] {   
+    display: none;
+
+}
+
+/*Um das nur ein Button von zwei ausgewählt werden kann:
+
+<input type="radio" name="Radiobutton" checked="checked"> 
+           
+&            
+
+<input type="radio" name="Radiobutton">
+                        
+*/

@@ -61,8 +61,13 @@ body {
     top: 30px;
     color:white;
     text-align: center;
-    font-family: fantasy;
+    font-family: Apple Chancery; 
     
+}
+
+h1 {
+    font-family: Apple Chancery;
+    font-size: 300%;
 }
 
 .Text {
