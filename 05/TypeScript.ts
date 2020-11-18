@@ -85,7 +85,6 @@ console.log("Relativ zur Gesamtemission der Welt verursacht Australien damit" + 
 console.log("Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um" + ProzentualeVeränderungAustralien + "% verändert");
 console.log("2018 im Vergleich zu 2008 sind das" + VeränderungCO2Australien + "kg CO2");
 
-/* Zum Merken: */
 
-var result : number = Europa2008 + Europa2018
-alert(result);
+
+
