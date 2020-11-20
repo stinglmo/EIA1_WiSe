@@ -55,35 +55,35 @@ var VeränderungCO2Australien : number = (Australien2018 - Australien2008);
 
 /* Konsolenausgaben */
 
-console.log("Die Emission von Europa ist: " + Europa2018 + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit " + AnteilEuropa + "%");
-console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungEuropa + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Europa + "kg CO2");
+console.log("Die Emission von Europa ist: " + Europa2018.toFixed + "kg CO2");
+console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit " + AnteilEuropa.toFixed + "%");
+console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungEuropa.toFixed + "% verändert");
+console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Europa.toFixed + "kg CO2");
 
-console.log("Die Emission von Asien ist: " + Asien2018 + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Asien damit " + AnteilAsien + "%");
-console.log("Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungAsien + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Asien + "kg CO2");
+console.log("Die Emission von Asien ist: " + Asien2018.toFixed + "kg CO2");
+console.log("Relativ zur Gesamtemission der Welt verursacht Asien damit " + AnteilAsien.toFixed + "%");
+console.log("Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungAsien.toFixed + "% verändert");
+console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Asien.toFixed + "kg CO2");
 
-console.log("Die Emission von Nordamerika ist: " + Nordamerika2018 + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit " + AnteilNoramerika + "%");
-console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungNordamerika + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Nordamerika + "kg CO2")
+console.log("Die Emission von Nordamerika ist: " + Nordamerika2018.toFixed + "kg CO2");
+console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit " + AnteilNoramerika.toFixed + "%");
+console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungNordamerika.toFixed + "% verändert");
+console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Nordamerika.toFixed + "kg CO2")
 
-console.log("Die Emission von Südamerika ist: " + Südamerika2018 + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Südamerika damit " + AnteilSüdamerika + "%");
-console.log("Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungSüdamerika + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Südamerika + "kg CO2")
+console.log("Die Emission von Südamerika ist: " + Südamerika2018.toFixed + "kg CO2");
+console.log("Relativ zur Gesamtemission der Welt verursacht Südamerika damit " + AnteilSüdamerika.toFixed + "%");
+console.log("Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungSüdamerika.toFixed + "% verändert");
+console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Südamerika.toFixed + "kg CO2")
 
-console.log("Die Emission von Afrika ist: " + Afrika2018 + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Afrika damit " + AnteilAfrika + "%");
-console.log("Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungAfrika + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Arika + "kg CO2");
+console.log("Die Emission von Afrika ist: " + Afrika2018.toFixed + "kg CO2");
+console.log("Relativ zur Gesamtemission der Welt verursacht Afrika damit " + AnteilAfrika.toFixed + "%");
+console.log("Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungAfrika.toFixed + "% verändert");
+console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Arika.toFixed + "kg CO2");
 
-console.log("Die Emission von Australien ist " + Australien2018 + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Australien damit " + AnteilAustralien + "%");
-console.log("Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungAustralien + "% verändert");
-console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Australien + "kg CO2");
+console.log("Die Emission von Australien ist " + Australien2018.toFixed + "kg CO2");
+console.log("Relativ zur Gesamtemission der Welt verursacht Australien damit " + AnteilAustralien.toFixed + "%");
+console.log("Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungAustralien.toFixed + "% verändert");
+console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Australien.toFixed + "kg CO2");
 
 
 
