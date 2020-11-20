@@ -14,7 +14,6 @@ var Australien2018 = 2100.5;
 /* Gesamtemission der Kontinente 2018 */
 var Gesamtemission = Europa2018 + Asien2018 + Nordamerika2018
     + Südamerika2018 + Afrika2018 + Australien2018;
-alert(Gesamtemission);
 /* Prozentanteil der Gesamtemission aller Kontinente 2018 */
 var AnteilEuropa = ((Europa2018 / Gesamtemission) * 100);
 var AnteilAsien = ((Asien2018 / Gesamtemission) * 100);
@@ -37,8 +36,8 @@ var VeränderungCO2Südamerika = (Südamerika2018 - Südamerika2008);
 var VeränderungCO2Arika = (Afrika2018 - Afrika2008);
 var VeränderungCO2Australien = (Australien2018 - Australien2008);
 /* Konsolenausgaben */
-console.log("Die Emission von Europa ist: " + Europa2018.toFixed + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit " + AnteilEuropa.toFixed + "%");
+console.log("Die Emission von Europa ist: " + Europa2018.toFixed(2) + "kg CO2");
+console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit " + AnteilEuropa.toFixed(2) + "%");
 console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungEuropa.toFixed + "% verändert");
 console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Europa.toFixed + "kg CO2");
 console.log("Die Emission von Asien ist: " + Asien2018.toFixed + "kg CO2");
