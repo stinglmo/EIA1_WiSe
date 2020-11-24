@@ -56,86 +56,57 @@ namespace NAME {
     const VeränderungCO2Afrika : number = (Afrika2018 - Afrika2008);
     const VeränderungCO2Australien : number = (Australien2018 - Australien2008);
 
-    // Gesamtemission //
 
-    function FunctionGes(Gesamtemission2018:number) {
-        console.log("Die Gesamtemission aller Kontinente beträgt im Jahr 2018 " + Gesamtemission2018);
-    
-    }
+    // Funktion //
 
-    FunctionGes(Gesamtemission);
+   function FunktionAllgemein(Wert2018:number, Anteil:number, ProzentualeVeränderung: number, VeränderungCO2: number) {
+    document.getElementById("AbsoluterWert").innerHTML = Wert2018.toString();
+    document.getElementById("RelativerWert").innerHTML = Anteil.toString();
+    document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderung.toString();
+    document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2.toString();
+    document.querySelector("chart").setAttribute('style', 'height:' + (Wert2018 / Gesamtemission * 100) + '%');
 
-    // Funktionen //
-
-    function FunctionAllg(Kontinent:string, Rechnung:number) {
-        console.log("Die Emission von " + Kontinent + "ist " + Rechnung.toFixed(2) + "kg CO2");
-        console.log("Relativ zur Gesamtemission verursacht " + Kontinent + " damit " + Rechnung.toFixed(2) + " %");
-        console.log("Für " + Kontinent + " hat sich 2018 im Vergleich zu 2008 die Emission um " + Rechnung.toFixed(2) + "% verändert");
-        console.log("2018 im Vergleich zu 2008 sind das " + Rechnung.toFixed(2) + "kg CO2");
-        
-    }
+   }
 
     // Europa //
 
-    FunctionAllg("Europa", Europa2018);
-    FunctionAllg("Europa", AnteilEuropa);
-    FunctionAllg("Europa", ProzentualeVeränderungEuropa);
-    FunctionAllg("Europa", VeränderungCO2Europa);
+    document.getElementById("europe").addEventListener("click", function () {
+        FunktionAllgemein(Europa2018, AnteilEuropa, ProzentualeVeränderungEuropa, VeränderungCO2Europa)
 
+    })
+      
     // Asien //
 
-    FunctionAllg("Asien", Asien2018);
-    FunctionAllg("Asien", AnteilAsien);
-    FunctionAllg("Asien", ProzentualeVeränderungAsien);
-    FunctionAllg("Asien", VeränderungCO2Asien);
+    document.getElementById("asia").addEventListener("click", function () {
+        FunktionAllgemein(Asien2018, AnteilAsien, ProzentualeVeränderungAsien, VeränderungCO2Asien)
+
+    })
 
     // Nordamerika //
 
-    FunctionAllg("Nordamerika", Nordamerika2018);
-    FunctionAllg("Nordamerika", Anteilnordamerika);
-    FunctionAllg("Nordamerika", ProzentualeVeränderungNordamerika);
-    FunctionAllg("Nordamerika", VeränderungCO2Nordamerika);
+    document.getElementById("northamerica").addEventListener("click", function () {
+        FunktionAllgemein(Nordamerika2018, AnteilNordamerika, ProzentualeVeränderungNordamerika, VeränderungCO2Nordamerika)
+
+    })
 
     // Südamerika //
 
-    FunctionAllg("Südamerika", Südamerika2018);
-    FunctionAllg("Südamerika", AnteilSüdamerika);
-    FunctionAllg("Südamerika", ProzentualeVeränderungSüdamerika);
-    FunctionAllg("Südamerika", VeränderungCO2Südamerika);
+    document.getElementById("southhamerica").addEventListener("click", function () {
+        FunktionAllgemein(Südamerika2018, AnteilSüdamerika, ProzentualeVeränderungSüdamerika, VeränderungCO2Südamerika)
+
+    })
 
     // Afrika //
 
-    FunctionAllg("Afrika", Afrika2018);
-    FunctionAllg("Afrika", AnteilAfrika);
-    FunctionAllg("Afrika", ProzentualeVeränderungAfrika);
-    FunctionAllg("Afrika", VeränderungCO2Afrika);
+    document.getElementById("africa").addEventListener("click", function () {
+        FunktionAllgemein(Afrika2018, AnteilAfrika, ProzentualeVeränderungAfrika, VeränderungCO2Afrika)
+
+    })
 
     // Australien //
 
-    FunctionAllg("Australien", Australien2018);
-    FunctionAllg("Australien", AnteilAustralien);
-    FunctionAllg("Australien", ProzentualeVeränderungAustralien);
-    FunctionAllg("Australien", VeränderungCO2Australien);
+    document.getElementById("australia").addEventListener("click", function () {
+        FunktionAllgemein(Australien2018, AnteilAustralien, ProzentualeVeränderungAustralien, VeränderungCO2Australien)
 
-
-    // Europa //
-
-    document.getElementById("europe").addEventListener("click", function (): {
-        document.getElementById("AbsoluterWert").innerHTML = Europa2018 + "";
-        document.getElementById("RelativerWert").innerHTML = AnteilEuropa.toString();
-        document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderungEuropa.toString();
-        document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2Europa.toString();
-        document.getElementsByClassName("chart").;
-        
     })
-
-    // Asien //
-
-    document.getElementById("northamerica").addEventListener("click", function (): {
-        document.getElementById("AbsoluterWert").innerHTML = Nordamerika2018.toString();
-        document.getElementById("RelativerWert").innerHTML = AnteilNordamerika.toString();
-        document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderungEuropa.toString();
-        document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2Europa.toString();
-        document.getElementsByClassName("chart").;
-
 }
