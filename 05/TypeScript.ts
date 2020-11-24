@@ -1,56 +1,58 @@
 /* Emissionswerte für die Kontinente 2008 und 2018 */
 
-var Europa2008 : number = 4965.7;
-var Europa2018 : number = 4209.3;
+const Europa2008 : number = 4965.7;
+const Europa2018 : number = 4209.3;
 
-var Asien2008 : number = 12954.7;
-var Asien2018 : number = 16274.1;
+const Asien2008 : number = 12954.7;
+const Asien2018 : number = 16274.1;
 
-var Nordamerika2008: number = 6600.4;
-var Nordamerika2018: number = 6035.6;
+const Nordamerika2008: number = 6600.4;
+const Nordamerika2018: number = 6035.6;
 
-var Südamerika2008 : number = 1132.6;
-var Südamerika2018 : number = 1261.5;
+const Südamerika2008 : number = 1132.6;
+const Südamerika2018 : number = 1261.5;
 
-var Afrika2008 : number = 1028;
-var Afrika2018 : number = 1235.5;
+const Afrika2008 : number = 1028;
+const Afrika2018 : number = 1235.5;
 
-var Australien2008 : number = 1993;
-var Australien2018 : number = 2100.5;
+const Australien2008 : number = 1993;
+const Australien2018 : number = 2100.5;
 
 /* Gesamtemission der Kontinente 2018 */
 
-var Gesamtemission : number = Europa2018 + Asien2018 + Nordamerika2018
+const Gesamtemission : number = Europa2018 + Asien2018 + Nordamerika2018
 + Südamerika2018 + Afrika2018 + Australien2018
 
 
 /* Prozentanteil der Gesamtemission aller Kontinente 2018 */
 
-var AnteilEuropa : number = ((Europa2018 / Gesamtemission) * 100);
-var AnteilAsien : number = ((Asien2018 / Gesamtemission) * 100);
-var AnteilNoramerika : number = ((Nordamerika2018 / Gesamtemission) * 100);
-var AnteilSüdamerika : number = ((Südamerika2018 / Gesamtemission) * 100);
-var AnteilAfrika : number = ((Afrika2018 / Gesamtemission) * 100);
-var AnteilAustralien : number = ((Australien2018 / Gesamtemission) * 100);
+const AnteilEuropa : number = ((Europa2018 / Gesamtemission) * 100);
+const AnteilAsien : number = ((Asien2018 / Gesamtemission) * 100);
+const AnteilNoramerika : number = ((Nordamerika2018 / Gesamtemission) * 100);
+const AnteilSüdamerika : number = ((Südamerika2018 / Gesamtemission) * 100);
+const AnteilAfrika : number = ((Afrika2018 / Gesamtemission) * 100);
+const AnteilAustralien : number = ((Australien2018 / Gesamtemission) * 100);
 
 
 /* Prozentuale Veränderung der Kontinente im Vergleich 2008 und 2018 */
 
-var ProzentualeVeränderungEuropa : number = (((Europa2018 / Europa2008) -1) * 100);
-var ProzentualeVeränderungAsien : number = (((Asien2018 / Asien2008) -1) * 100);
-var ProzentualeVeränderungNordamerika : number = (((Nordamerika2018 / Nordamerika2008) -1) * 100);
-var ProzentualeVeränderungSüdamerika : number = (((Südamerika2018 / Südamerika2008) -1) * 100);
-var ProzentualeVeränderungAfrika : number = (((Afrika2018 / Afrika2008) -1) * 100);
-var ProzentualeVeränderungAustralien : number = (((Australien2018 / Australien2008) -1) * 100);
+const ProzentualeVeränderungEuropa : number = (((Europa2018 / Europa2008) -1) * 100);
+const ProzentualeVeränderungAsien : number = (((Asien2018 / Asien2008) -1) * 100);
+const ProzentualeVeränderungNordamerika : number = (((Nordamerika2018 / Nordamerika2008) -1) * 100);
+const ProzentualeVeränderungSüdamerika : number = (((Südamerika2018 / Südamerika2008) -1) * 100);
+const ProzentualeVeränderungAfrika : number = (((Afrika2018 / Afrika2008) -1) * 100);
+const ProzentualeVeränderungAustralien : number = (((Australien2018 / Australien2008) -1) * 100);
 
 /* Vergleich von kg CO2 der Kontinente 2008 und 2018 */
 
-var VeränderungCO2Europa : number = (Europa2018 - Europa2008);
-var VeränderungCO2Asien : number = (Asien2018 - Asien2008);
-var VeränderungCO2Nordamerika : number = (Nordamerika2018 - Nordamerika2008);
-var VeränderungCO2Südamerika : number = (Südamerika2018 - Südamerika2008);
-var VeränderungCO2Arika : number = (Afrika2018 - Afrika2008);
-var VeränderungCO2Australien : number = (Australien2018 - Australien2008);
+const VeränderungCO2Europa : number = (Europa2018 - Europa2008);
+const VeränderungCO2Asien : number = (Asien2018 - Asien2008);
+const VeränderungCO2Nordamerika : number = (Nordamerika2018 - Nordamerika2008);
+const VeränderungCO2Südamerika : number = (Südamerika2018 - Südamerika2008);
+const VeränderungCO2Arika : number = (Afrika2018 - Afrika2008);
+const VeränderungCO2Australien : number = (Australien2018 - Australien2008);
+
+
 
 /* Konsolenausgaben */
 
