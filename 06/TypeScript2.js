@@ -45,10 +45,10 @@ var NAME;
     FunctionGes(Gesamtemission);
     // Funktionen //
     function FunctionAllg(Kontinent, Rechnung) {
-        console.log("Die Emission von " + Kontinent + "ist " + Rechnung + "kg CO2");
-        console.log("Relativ zur Gesamtemission verursacht " + Kontinent + " damit " + Rechnung + " %");
-        console.log("Für " + Kontinent + " hat sich 2018 im Vergleich zu 2008 die Emission um " + Rechnung + "% verändert");
-        console.log("2018 im Vergleich zu 2008 sind das " + Rechnung + "kg CO2");
+        console.log("Die Emission von " + Kontinent + "ist " + Rechnung.toFixed(2) + "kg CO2");
+        console.log("Relativ zur Gesamtemission verursacht " + Kontinent + " damit " + Rechnung.toFixed(2) + " %");
+        console.log("Für " + Kontinent + " hat sich 2018 im Vergleich zu 2008 die Emission um " + Rechnung.toFixed(2) + "% verändert");
+        console.log("2018 im Vergleich zu 2008 sind das " + Rechnung.toFixed(2) + "kg CO2");
     }
     // Europa //
     FunctionAllg("Europa", Europa2018);
@@ -80,5 +80,8 @@ var NAME;
     FunctionAllg("Australien", AnteilAustralien);
     FunctionAllg("Australien", ProzentualeVeränderungAustralien);
     FunctionAllg("Australien", VeränderungCO2Australien);
+    document.getElementById("europe").addEventListener("click", function () {
+        document.getElementById();
+    });
 })(NAME || (NAME = {}));
 //# sourceMappingURL=TypeScript2.js.map
