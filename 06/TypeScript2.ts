@@ -32,7 +32,7 @@ namespace NAME {
 
     const AnteilEuropa : number = ((Europa2018 / Gesamtemission) * 100);
     const AnteilAsien : number = ((Asien2018 / Gesamtemission) * 100);
-    const AnteilNordamerika : number = ((Nordamerika2018 / Gesamtemission) * 100);
+    const Anteilnordamerika : number = ((Nordamerika2018 / Gesamtemission) * 100);
     const AnteilSüdamerika : number = ((Südamerika2018 / Gesamtemission) * 100);
     const AnteilAfrika : number = ((Afrika2018 / Gesamtemission) * 100);
     const AnteilAustralien : number = ((Australien2018 / Gesamtemission) * 100);
@@ -92,7 +92,7 @@ namespace NAME {
     // Nordamerika //
 
     FunctionAllg("Nordamerika", Nordamerika2018);
-    FunctionAllg("Nordamerika", AnteilNordamerika);
+    FunctionAllg("Nordamerika", Anteilnordamerika);
     FunctionAllg("Nordamerika", ProzentualeVeränderungNordamerika);
     FunctionAllg("Nordamerika", VeränderungCO2Nordamerika);
 
@@ -120,16 +120,22 @@ namespace NAME {
 
     // Europa //
 
-    document.getElementById("europe").addEventListener("click", function () {
-        document.getElementById("AbsoluterWert").innerHTML = Europa2018
-        document.getElementById("RelativerWert").innerHTML = AnteilEuropa
-        document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderungEuropa
-        document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2Europa
+    document.getElementById("europe").addEventListener("click", function (): {
+        document.getElementById("AbsoluterWert").innerHTML = Europa2018 + "";
+        document.getElementById("RelativerWert").innerHTML = AnteilEuropa.toString();
+        document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderungEuropa.toString();
+        document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2Europa.toString();
+        document.getElementsByClassName("chart").;
         
     })
 
     // Asien //
 
-
+    document.getElementById("northamerica").addEventListener("click", function (): {
+        document.getElementById("AbsoluterWert").innerHTML = Nordamerika2018.toString();
+        document.getElementById("RelativerWert").innerHTML = AnteilNordamerika.toString();
+        document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderungEuropa.toString();
+        document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2Europa.toString();
+        document.getElementsByClassName("chart").;
 
 }

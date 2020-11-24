@@ -17,7 +17,7 @@ var Gesamtemission = Europa2018 + Asien2018 + Nordamerika2018
 /* Prozentanteil der Gesamtemission aller Kontinente 2018 */
 var AnteilEuropa = ((Europa2018 / Gesamtemission) * 100);
 var AnteilAsien = ((Asien2018 / Gesamtemission) * 100);
-var AnteilNoramerika = ((Nordamerika2018 / Gesamtemission) * 100);
+var AnteilNordamerika = ((Nordamerika2018 / Gesamtemission) * 100);
 var AnteilSüdamerika = ((Südamerika2018 / Gesamtemission) * 100);
 var AnteilAfrika = ((Afrika2018 / Gesamtemission) * 100);
 var AnteilAustralien = ((Australien2018 / Gesamtemission) * 100);
@@ -45,7 +45,7 @@ console.log("Relativ zur Gesamtemission der Welt verursacht Asien damit " + Ante
 console.log("Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungAsien.toFixed(2) + "% verändert");
 console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Asien.toFixed(2) + "kg CO2");
 console.log("Die Emission von Nordamerika ist: " + Nordamerika2018.toFixed(2) + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit " + AnteilNoramerika.toFixed(2) + "%");
+console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit " + AnteilNordamerika.toFixed(2) + "%");
 console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungNordamerika.toFixed(2) + "% verändert");
 console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Nordamerika.toFixed(2) + "kg CO2");
 console.log("Die Emission von Südamerika ist: " + Südamerika2018.toFixed(2) + "kg CO2");

@@ -20,7 +20,7 @@ var NAME;
     /* Prozentanteil der Gesamtemission aller Kontinente 2018 */
     var AnteilEuropa = ((Europa2018 / Gesamtemission) * 100);
     var AnteilAsien = ((Asien2018 / Gesamtemission) * 100);
-    var AnteilNordamerika = ((Nordamerika2018 / Gesamtemission) * 100);
+    var Anteilnordamerika = ((Nordamerika2018 / Gesamtemission) * 100);
     var AnteilSüdamerika = ((Südamerika2018 / Gesamtemission) * 100);
     var AnteilAfrika = ((Afrika2018 / Gesamtemission) * 100);
     var AnteilAustralien = ((Australien2018 / Gesamtemission) * 100);
@@ -62,7 +62,7 @@ var NAME;
     FunctionAllg("Asien", VeränderungCO2Asien);
     // Nordamerika //
     FunctionAllg("Nordamerika", Nordamerika2018);
-    FunctionAllg("Nordamerika", AnteilNordamerika);
+    FunctionAllg("Nordamerika", Anteilnordamerika);
     FunctionAllg("Nordamerika", ProzentualeVeränderungNordamerika);
     FunctionAllg("Nordamerika", VeränderungCO2Nordamerika);
     // Südamerika //
@@ -81,12 +81,16 @@ var NAME;
     FunctionAllg("Australien", ProzentualeVeränderungAustralien);
     FunctionAllg("Australien", VeränderungCO2Australien);
     // Europa //
-    document.getElementById("europe").addEventListener("click", function () {
-        document.getElementById("AbsoluterWert").innerHTML = Europa2018;
-        document.getElementById("RelativerWert").innerHTML = AnteilEuropa;
-        document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderungEuropa;
-        document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2Europa;
-    });
-    // Asien //
+    document.getElementById("europe").addEventListener("click", , document.getElementById("AbsoluterWert").innerHTML = Europa2018 + "");
+    document.getElementById("RelativerWert").innerHTML = AnteilEuropa.toString();
+    document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderungEuropa.toString();
+    document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2Europa.toString();
+    document.getElementsByClassName("chart").;
 })(NAME || (NAME = {}));
+// Asien //
+document.getElementById("northamerica").addEventListener("click", , document.getElementById("AbsoluterWert").innerHTML = Nordamerika2018.toString());
+document.getElementById("RelativerWert").innerHTML = AnteilNordamerika.toString();
+document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderungEuropa.toString();
+document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2Europa.toString();
+document.getElementsByClassName("chart").;
 //# sourceMappingURL=TypeScript2.js.map

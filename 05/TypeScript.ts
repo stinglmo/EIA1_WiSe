@@ -28,7 +28,7 @@ const Gesamtemission : number = Europa2018 + Asien2018 + Nordamerika2018
 
 const AnteilEuropa : number = ((Europa2018 / Gesamtemission) * 100);
 const AnteilAsien : number = ((Asien2018 / Gesamtemission) * 100);
-const AnteilNoramerika : number = ((Nordamerika2018 / Gesamtemission) * 100);
+const AnteilNordamerika : number = ((Nordamerika2018 / Gesamtemission) * 100);
 const AnteilSüdamerika : number = ((Südamerika2018 / Gesamtemission) * 100);
 const AnteilAfrika : number = ((Afrika2018 / Gesamtemission) * 100);
 const AnteilAustralien : number = ((Australien2018 / Gesamtemission) * 100);
@@ -67,7 +67,7 @@ console.log("Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um " + P
 console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Asien.toFixed(2) + "kg CO2");
 
 console.log("Die Emission von Nordamerika ist: " + Nordamerika2018.toFixed(2) + "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit " + AnteilNoramerika.toFixed(2) + "%");
+console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit " + AnteilNordamerika.toFixed(2) + "%");
 console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um " + ProzentualeVeränderungNordamerika.toFixed(2) + "% verändert");
 console.log("2018 im Vergleich zu 2008 sind das " + VeränderungCO2Nordamerika.toFixed(2) + "kg CO2")
 
