@@ -80,8 +80,13 @@ var NAME;
     FunctionAllg("Australien", AnteilAustralien);
     FunctionAllg("Australien", ProzentualeVeränderungAustralien);
     FunctionAllg("Australien", VeränderungCO2Australien);
+    // Europa //
     document.getElementById("europe").addEventListener("click", function () {
-        document.getElementById();
+        document.getElementById("AbsoluterWert").innerHTML = Europa2018;
+        document.getElementById("RelativerWert").innerHTML = AnteilEuropa;
+        document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderungEuropa;
+        document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2Europa;
     });
+    // Asien //
 })(NAME || (NAME = {}));
 //# sourceMappingURL=TypeScript2.js.map
