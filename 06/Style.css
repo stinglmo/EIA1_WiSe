@@ -16,6 +16,10 @@ nav img {
     opacity: 50%;
 }
 
+nav img:active {
+    opacity: 100%;
+}
+
 nav img:hover {
     opacity: 100%;
 }
