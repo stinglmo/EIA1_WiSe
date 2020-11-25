@@ -60,11 +60,11 @@ namespace NAME {
     // Funktion //
 
    function FunktionAllgemein(Wert2018:number, Anteil:number, ProzentualeVeränderung: number, VeränderungCO2: number, Kontinent: string) {
-    document.getElementById("AbsoluterWert").innerHTML = Wert2018.toFixed(2).toString();
-    document.getElementById("RelativerWert").innerHTML = Anteil.toFixed(2).toString();
-    document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderung.toFixed(2).toString();
-    document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2.toFixed(2).toString();
-    document.querySelector(".chart").setAttribute('style', 'height:' + (Wert2018 / Gesamtemission * 100) + '%');
+    document.getElementById("AbsoluterWert").innerHTML = Wert2018.toFixed(2) + "kg CO2";
+    document.getElementById("RelativerWert").innerHTML = Anteil.toFixed(2) + "%";
+    document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderung.toFixed(2) + "%";
+    document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2.toFixed(2);
+    document.querySelector(".chart").setAttribute('style', 'height:' + (Wert2018 / Gesamtemission * 100).toFixed(2) + '%');
     document.querySelector("#titleregion").innerHTML = Kontinent;
 
    }
