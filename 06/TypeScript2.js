@@ -45,8 +45,8 @@ var NAME;
         document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderung.toFixed(2) + "%";
         document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2.toFixed(2);
         document.querySelector(".chart").setAttribute('style', 'height:' + (Wert2018 / Gesamtemission * 100).toFixed(2) + '%');
-        document.getElementById("#titleRegion").innerHTML = Kontinent;
-        document.getElementById("#titleRegionU").innerHTML = Kontinent;
+        document.getElementById("titleRegion").innerHTML = Kontinent;
+        document.getElementById("titleRegionU").innerHTML = Kontinent;
     }
     // Europa //
     document.getElementById("Europe").addEventListener("click", function () {
