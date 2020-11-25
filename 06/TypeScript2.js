@@ -40,10 +40,10 @@ var NAME;
     var VeränderungCO2Australien = (Australien2018 - Australien2008);
     // Funktion //
     function FunktionAllgemein(Wert2018, Anteil, ProzentualeVeränderung, VeränderungCO2, Kontinent) {
-        document.getElementById("AbsoluterWert").innerHTML = Wert2018.toString();
-        document.getElementById("RelativerWert").innerHTML = Anteil.toString();
-        document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderung.toString();
-        document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2.toString();
+        document.getElementById("AbsoluterWert").innerHTML = Wert2018.toFixed(2).toString();
+        document.getElementById("RelativerWert").innerHTML = Anteil.toFixed(2).toString();
+        document.getElementById("WachstumsrateProzent").innerHTML = ProzentualeVeränderung.toFixed(2).toString();
+        document.getElementById("WachstumsrateAbsolut").innerHTML = VeränderungCO2.toFixed(2).toString();
         document.querySelector(".chart").setAttribute('style', 'height:' + (Wert2018 / Gesamtemission * 100) + '%');
         document.querySelector("#titleregion").innerHTML = Kontinent;
     }
