@@ -20,7 +20,7 @@ var NAME;
     /* Prozentanteil der Gesamtemission aller Kontinente 2018 */
     var AnteilEuropa = ((Europa2018 / Gesamtemission) * 100);
     var AnteilAsien = ((Asien2018 / Gesamtemission) * 100);
-    var Anteilnordamerika = ((Nordamerika2018 / Gesamtemission) * 100);
+    var AnteilNordamerika = ((Nordamerika2018 / Gesamtemission) * 100);
     var AnteilSüdamerika = ((Südamerika2018 / Gesamtemission) * 100);
     var AnteilAfrika = ((Afrika2018 / Gesamtemission) * 100);
     var AnteilAustralien = ((Australien2018 / Gesamtemission) * 100);
@@ -60,7 +60,7 @@ var NAME;
         FunktionAllgemein(Nordamerika2018, AnteilNordamerika, ProzentualeVeränderungNordamerika, VeränderungCO2Nordamerika, "Northamerica");
     });
     // Südamerika //
-    document.getElementById("southhamerica").addEventListener("click", function () {
+    document.getElementById("southamerica").addEventListener("click", function () {
         FunktionAllgemein(Südamerika2018, AnteilSüdamerika, ProzentualeVeränderungSüdamerika, VeränderungCO2Südamerika, "Southamerica");
     });
     // Afrika //

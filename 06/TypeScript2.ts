@@ -32,7 +32,7 @@ namespace NAME {
 
     const AnteilEuropa : number = ((Europa2018 / Gesamtemission) * 100);
     const AnteilAsien : number = ((Asien2018 / Gesamtemission) * 100);
-    const Anteilnordamerika : number = ((Nordamerika2018 / Gesamtemission) * 100);
+    const AnteilNordamerika : number = ((Nordamerika2018 / Gesamtemission) * 100);
     const AnteilSüdamerika : number = ((Südamerika2018 / Gesamtemission) * 100);
     const AnteilAfrika : number = ((Afrika2018 / Gesamtemission) * 100);
     const AnteilAustralien : number = ((Australien2018 / Gesamtemission) * 100);
@@ -92,7 +92,7 @@ namespace NAME {
 
     // Südamerika //
 
-    document.getElementById("southhamerica").addEventListener("click", function () {
+    document.getElementById("southamerica").addEventListener("click", function () {
         FunktionAllgemein(Südamerika2018, AnteilSüdamerika, ProzentualeVeränderungSüdamerika, VeränderungCO2Südamerika, "Southamerica")
 
     })
