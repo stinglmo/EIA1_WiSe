@@ -68,6 +68,7 @@ namespace NAME {
     document.getElementById("titleRegion").innerHTML = Kontinent;
     document.getElementById("titleRegionU").innerHTML = Kontinent;
     
+    
 
    }
    

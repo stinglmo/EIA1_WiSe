@@ -1,0 +1,116 @@
+html {
+    height: 100%;
+    
+}
+
+body {
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#DrumPad {
+    position: relative;
+    height: 510px;
+    width: 480px;
+}
+
+.Nummer1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #236467;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+    color-interpolation-filters: linearRGB;
+}
+
+.Nummer2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #336700;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+.Nummer3 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #110088;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+.Nummer4 {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background-color: #991111;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+.Nummer5 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: #006677;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+.Nummer6 {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: #777700;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+.Nummer7 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: #661212;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+.Nummer8 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #228844;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+.Nummer9 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    background-color: #222266;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+.play-button {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
