@@ -35,7 +35,7 @@ document.getElementById('Nummer9').addEventListener('click', function () {
 });
 // Drum Machine //
 setInterval(function () {
-    // Anweisungen
+    document.getElementsByClassName('Nummer1');
 }, 500);
 // document.getElementById('play-button').setAttribute('click')
 //# sourceMappingURL=TypeScript.js.map

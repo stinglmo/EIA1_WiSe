@@ -5,7 +5,7 @@ html {
 
 body {
     height: 100%;
-    background-color: #000;
+    background-color: #002;
     display: flex;
     height: 100%;
     align-items: center;
@@ -14,26 +14,25 @@ body {
 
 #DrumPad {
     position: relative;
-    height: 510px;
-    width: 480px;
+    height: 490px;
+    width: 490px;
 }
 
 .Nummer1 {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #236467;
+    background-color: #144040;
     height: 150px;
     width: 150px;
     border-radius: 10%;
-    color-interpolation-filters: linearRGB;
 }
 
 .Nummer2 {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: #336700;
+    top: 10px;
+    left: 170px;
+    background-color: #146A6A;
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -41,9 +40,9 @@ body {
 
 .Nummer3 {
     position: absolute;
-    top: 30px;
-    left: 30px;
-    background-color: #110088;
+    top: 10px;
+    left: 330px;
+    background-color:  #00CBCB;
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -51,9 +50,9 @@ body {
 
 .Nummer4 {
     position: absolute;
-    top: 10px;
-    left: 30px;
-    background-color: #991111;
+    top: 170px;
+    left: 10px;
+    background-color:   #485320;
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -61,9 +60,9 @@ body {
 
 .Nummer5 {
     position: absolute;
-    top: 10px;
-    left: 20px;
-    background-color: #006677;
+    top: 170px;
+    left: 170px;
+    background-color: #1F7700;
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -71,9 +70,9 @@ body {
 
 .Nummer6 {
     position: absolute;
-    top: 20px;
-    left: 10px;
-    background-color: #777700;
+    top: 170px;
+    left: 330px;
+    background-color: #2DB42D;
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -81,9 +80,9 @@ body {
 
 .Nummer7 {
     position: absolute;
-    top: 30px;
+    top: 330px;
     left: 10px;
-    background-color: #661212;
+    background-color: #FF6D3C;
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -91,9 +90,9 @@ body {
 
 .Nummer8 {
     position: absolute;
-    top: 50px;
-    left: 50px;
-    background-color: #228844;
+    top: 330px;
+    left: 170px;
+    background-color: #FFAD3C;
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -101,16 +100,17 @@ body {
 
 .Nummer9 {
     position: absolute;
-    top: 60px;
-    left: 60px;
-    background-color: #222266;
+    top: 330px;
+    left: 330px;
+    background-color: #FFED3C;
     height: 150px;
     width: 150px;
     border-radius: 10%;
 }
 
+
 .play-button {
     position: absolute;
-    top: 200px;
-    left: 100px;
+    top: 480px;
+    left: 170px;
 }
