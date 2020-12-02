@@ -18,7 +18,7 @@ body {
     width: 490px;
 }
 
-.Nummer1 {
+#Nummer1 {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -28,7 +28,7 @@ body {
     border-radius: 10%;
 }
 
-.Nummer2 {
+#Nummer2 {
     position: absolute;
     top: 10px;
     left: 170px;
@@ -38,7 +38,7 @@ body {
     border-radius: 10%;
 }
 
-.Nummer3 {
+#Nummer3 {
     position: absolute;
     top: 10px;
     left: 330px;
@@ -48,7 +48,7 @@ body {
     border-radius: 10%;
 }
 
-.Nummer4 {
+#Nummer4 {
     position: absolute;
     top: 170px;
     left: 10px;
@@ -58,7 +58,7 @@ body {
     border-radius: 10%;
 }
 
-.Nummer5 {
+#Nummer5 {
     position: absolute;
     top: 170px;
     left: 170px;
@@ -68,7 +68,7 @@ body {
     border-radius: 10%;
 }
 
-.Nummer6 {
+#Nummer6 {
     position: absolute;
     top: 170px;
     left: 330px;
@@ -78,7 +78,7 @@ body {
     border-radius: 10%;
 }
 
-.Nummer7 {
+#Nummer7 {
     position: absolute;
     top: 330px;
     left: 10px;
@@ -88,7 +88,7 @@ body {
     border-radius: 10%;
 }
 
-.Nummer8 {
+#Nummer8 {
     position: absolute;
     top: 330px;
     left: 170px;
@@ -98,7 +98,7 @@ body {
     border-radius: 10%;
 }
 
-.Nummer9 {
+#Nummer9 {
     position: absolute;
     top: 330px;
     left: 330px;
