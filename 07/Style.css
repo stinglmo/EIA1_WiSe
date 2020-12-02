@@ -109,7 +109,7 @@ body {
 }
 
 
-.play-button {
+#play-button {
     position: absolute;
     top: 480px;
     left: 170px;

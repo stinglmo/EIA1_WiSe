@@ -1,70 +1,60 @@
 
-// Drum Pad - Sounds //
+// Drum Pad - Sounds - Array //
 
-const Sound1:HTMLAudioElement = new Audio('./assets/A.mp3');
+const Sound = []; 
 
-const Sound2:HTMLAudioElement = new Audio('./assets/C.mp3');
-
-const Sound3:HTMLAudioElement = new Audio('./assets/F.mp3');
-
-const Sound4:HTMLAudioElement = new Audio('./assets/G.mp3');
-
-const Sound5:HTMLAudioElement = new Audio('./assets/hihat.mp3');
-
-const Sound6:HTMLAudioElement = new Audio('./assets/kick.mp3');
-
-const Sound7:HTMLAudioElement = new Audio('./assets/laugh-1.mp3');
-
-const Sound8:HTMLAudioElement = new Audio('./assets/laugh-2.mp3');
-
-const Sound9:HTMLAudioElement = new Audio('./assets/snare.mp3');
-
-// Array //
-
-const ALLSOUNDS:any [] = ['Sound1', 'Sound2', 'Sound3', 'Sound4', 'Sound5', 'Sound6', 'Sound7', 'Sound8', 'Sound9']
+Sound[0] = new Audio('./assets/A.mp3');
+Sound[1] = new Audio('./assets/C.mp3');
+Sound[2] = new Audio('./assets/F.mp3');
+Sound[3] = new Audio('./assets/G.mp3');
+Sound[4] = new Audio('./assets/hihat.mp3');
+Sound[5] = new Audio('./assets/kick.mp3');
+Sound[6] = new Audio('./assets/laugh-1.mp3');
+Sound[7] = new Audio('./assets/laugh-2.mp3');
+Sound[8] = new Audio('./assets/snare.mp3');
 
 // Funktion //
 
-function playSample(): any {
-    document.querySelector('.button').innerHTML 
-}
+ function playSample(Button:number) {
+    Sound[Button].play();
+ }
 
 // Funktionsaufrufe //
 
 document.getElementById('Nummer1').addEventListener('click', function() {
-    Sound1.play();
+    playSample(0);
 })
 
 document.getElementById('Nummer2').addEventListener('click', function() {
-    Sound2.play();
+    playSample(1);
 })
 
 document.getElementById('Nummer3').addEventListener('click', function() {
-    Sound3.play();
+    playSample(2);
 })
 
 document.getElementById('Nummer4').addEventListener('click', function() {
-    Sound4.play();
+    playSample(3);
 })
 
 document.getElementById('Nummer5').addEventListener('click', function() {
-    Sound5.play();
+    playSample(4);
 })
 
 document.getElementById('Nummer6').addEventListener('click', function() {
-    Sound6.play();
+    playSample(5);
 })
 
 document.getElementById('Nummer7').addEventListener('click', function() {
-    Sound7.play();
+    playSample(6);
 })
 
 document.getElementById('Nummer8').addEventListener('click', function() {
-    Sound8.play();
+    playSample(7);
 })
 
 document.getElementById('Nummer9').addEventListener('click', function() {
-    Sound9.play();
+    playSample(8);
 })
 
 
@@ -73,18 +63,11 @@ document.getElementById('Nummer9').addEventListener('click', function() {
 
 // Drum Machine //
 
-function Intervall(): any {
-    document.querySelector('#play-button').innerHTML 
+function Intervall(Hihat:number, Kick:number, Snare:number): any {
+    setInterval(function() {
+        Hihat[4], Kick[5], Snare[8]
+      }, 500);
 }
 
-setInterval(function() {
-    Sound5; Sound6; Sound5; Sound6; Sound9; Sound9; Sound5; Sound6; Sound5; Sound6; Sound9; Sound9;
-    Sound5; Sound6; Sound5; Sound6; Sound9; Sound9; Sound5; Sound6; Sound5; Sound6; Sound9; Sound9;
-    Sound5; Sound6; Sound5; Sound6; Sound9; Sound9; Sound5; Sound6; Sound5; Sound6; Sound9; Sound9;
-    Sound5; Sound6; Sound5; Sound6; Sound9; Sound9; Sound5; Sound6; Sound5; Sound6; Sound9; Sound9;
-    Sound5; Sound6; Sound5; Sound6; Sound9; Sound9; Sound5; Sound6; Sound5; Sound6; Sound9; Sound9;
-   }, 500);
-
- document.getElementById('play-button').addEventListener('click', function() {
-   setInterval
-   });
+document.getElementById('Nummer1').addEventListener('click', function() {
+    Intervall(4,5,8); })
