@@ -44,10 +44,12 @@ document.getElementById('Nummer9').addEventListener('click', function () {
 // Drum Machine //
 function Intervall(Hihat, Kick, Snare) {
     setInterval(function () {
-        Hihat[4], Kick[5], Snare[8];
-    }, 500);
+        playSample(Hihat);
+        playSample(Kick);
+        playSample(Snare);
+    }, 400);
 }
-document.getElementById('Nummer1').addEventListener('click', function () {
+document.getElementById('play-button').addEventListener('click', function () {
     Intervall(4, 5, 8);
 });
 //# sourceMappingURL=TypeScript.js.map

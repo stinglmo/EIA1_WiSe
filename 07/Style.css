@@ -22,7 +22,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #144040;
+    background-image: linear-gradient( #144040,  #031f1f);
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -32,7 +32,7 @@ body {
     position: absolute;
     top: 10px;
     left: 170px;
-    background-color: #146A6A;
+    background-image: linear-gradient(#146A6A,#043131);
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -42,7 +42,7 @@ body {
     position: absolute;
     top: 10px;
     left: 330px;
-    background-color:  #00CBCB;
+    background-image: linear-gradient(#00CBCB,#146A6A);
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -52,7 +52,7 @@ body {
     position: absolute;
     top: 170px;
     left: 10px;
-    background-color:   #485320;
+    background-image: linear-gradient(#485320,#262e0b);
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -62,7 +62,7 @@ body {
     position: absolute;
     top: 170px;
     left: 170px;
-    background-color: #1F7700;
+    background-image: linear-gradient(#1F7700,#485320) ;
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -72,7 +72,7 @@ body {
     position: absolute;
     top: 170px;
     left: 330px;
-    background-color: #2DB42D;
+    background-image: linear-gradient(#2DB42D,#1F7700);
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -82,7 +82,7 @@ body {
     position: absolute;
     top: 330px;
     left: 10px;
-    background-color: #FF6D3C;
+    background-image: linear-gradient(#FF6D3C,#cf4416) ;
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -92,7 +92,7 @@ body {
     position: absolute;
     top: 330px;
     left: 170px;
-    background-color: #FFAD3C;
+    background-image: linear-gradient(#FFAD3C, #FF6D3C) ;
     height: 150px;
     width: 150px;
     border-radius: 10%;
@@ -102,7 +102,7 @@ body {
     position: absolute;
     top: 330px;
     left: 330px;
-    background-color: #FFED3C;
+    background-image: linear-gradient(#FFED3C, #FFAD3C);
     height: 150px;
     width: 150px;
     border-radius: 10%;

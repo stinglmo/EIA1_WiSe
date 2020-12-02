@@ -1,7 +1,7 @@
 
 // Drum Pad - Sounds - Array //
 
-const Sound = []; 
+const Sound: HTMLAudioElement [] = []; 
 
 Sound[0] = new Audio('./assets/A.mp3');
 Sound[1] = new Audio('./assets/C.mp3');
@@ -65,9 +65,13 @@ document.getElementById('Nummer9').addEventListener('click', function() {
 
 function Intervall(Hihat:number, Kick:number, Snare:number): any {
     setInterval(function() {
-        Hihat[4], Kick[5], Snare[8]
-      }, 500);
+        playSample(Hihat);
+        playSample(Kick);
+        playSample(Snare);
+      }, 400);
 }
 
-document.getElementById('Nummer1').addEventListener('click', function() {
+document.getElementById('play-button').addEventListener('click', function() {
     Intervall(4,5,8); })
+
+    
