@@ -63,14 +63,14 @@ document.getElementById('Nummer9').addEventListener('click', function () {
 
 // Drum Machine - SetIntervall sorgt für Wiederholung (kontinuierlich)
 
-var SEQ: string[] = ['./assets/hihat.mp3', './assets/kick.mp3', './assets/snare.mp3'];
+let SEQ: string[] = ['./assets/hihat.mp3', './assets/kick.mp3', './assets/snare.mp3'];
 
-var INDEXSEQ: number = 0;
+let INDEXSEQ: number = 0;
 
 
 function Intervall() {
     setInterval(function () {
-        var SOUND: HTMLAudioElement = new Audio(SEQ[INDEXSEQ]);
+        let SOUND: HTMLAudioElement = new Audio(SEQ[INDEXSEQ]);
         SOUND.play();
 
         INDEXSEQ = INDEXSEQ + 1;
