@@ -1,7 +1,7 @@
 
 // Drum Pad - Sounds - Array //
 
-const Sound: HTMLAudioElement [] = []; 
+const Sound: HTMLAudioElement[] = [];
 
 Sound[0] = new Audio('./assets/A.mp3');
 Sound[1] = new Audio('./assets/C.mp3');
@@ -15,45 +15,45 @@ Sound[8] = new Audio('./assets/snare.mp3');
 
 // Funktion //
 
- function playSample(Button:number) {
+function playSample(Button: number) {
     Sound[Button].play();
- }
+}
 
 // Funktionsaufrufe //
 
-document.getElementById('Nummer1').addEventListener('click', function() {
+document.getElementById('Nummer1').addEventListener('click', function () {
     playSample(0);
 })
 
-document.getElementById('Nummer2').addEventListener('click', function() {
+document.getElementById('Nummer2').addEventListener('click', function () {
     playSample(1);
 })
 
-document.getElementById('Nummer3').addEventListener('click', function() {
+document.getElementById('Nummer3').addEventListener('click', function () {
     playSample(2);
 })
 
-document.getElementById('Nummer4').addEventListener('click', function() {
+document.getElementById('Nummer4').addEventListener('click', function () {
     playSample(3);
 })
 
-document.getElementById('Nummer5').addEventListener('click', function() {
+document.getElementById('Nummer5').addEventListener('click', function () {
     playSample(4);
 })
 
-document.getElementById('Nummer6').addEventListener('click', function() {
+document.getElementById('Nummer6').addEventListener('click', function () {
     playSample(5);
 })
 
-document.getElementById('Nummer7').addEventListener('click', function() {
+document.getElementById('Nummer7').addEventListener('click', function () {
     playSample(6);
 })
 
-document.getElementById('Nummer8').addEventListener('click', function() {
+document.getElementById('Nummer8').addEventListener('click', function () {
     playSample(7);
 })
 
-document.getElementById('Nummer9').addEventListener('click', function() {
+document.getElementById('Nummer9').addEventListener('click', function () {
     playSample(8);
 })
 
@@ -61,17 +61,24 @@ document.getElementById('Nummer9').addEventListener('click', function() {
 
 
 
-// Drum Machine //
+// Drum Machine - SetIntervall sorgt für Wiederholung (kontinuierlich)
 
-function Intervall(Hihat:number, Kick:number, Snare:number): any {
-    setInterval(function() {
-        playSample(Hihat);
-        playSample(Kick);
-        playSample(Snare);
-      }, 400);
+var SEQ: string[] = ['./assets/hihat.mp3', './assets/kick.mp3', './assets/snare.mp3'];
+
+var INDEXSEQ: number = 0;
+
+
+function Intervall() {
+    setInterval(function () {
+        var SOUND: HTMLAudioElement = new Audio(SEQ[INDEXSEQ]);
+        SOUND.play();
+
+        INDEXSEQ = INDEXSEQ + 1;
+
+    }, 400);
 }
 
-document.getElementById('play-button').addEventListener('click', function() {
-    Intervall(4,5,8); })
+document.getElementById('play-button').addEventListener('click', function () {
+    Intervall();
+})
 
-    

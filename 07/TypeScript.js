@@ -41,7 +41,7 @@ document.getElementById('Nummer8').addEventListener('click', function () {
 document.getElementById('Nummer9').addEventListener('click', function () {
     playSample(8);
 });
-// Drum Machine //
+// Drum Machine - SetIntervall sorgt für Wiederholung (kontinuierlich)
 function Intervall(Hihat, Kick, Snare) {
     setInterval(function () {
         playSample(Hihat);
