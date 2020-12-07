@@ -42,14 +42,16 @@ document.getElementById('Nummer9').addEventListener('click', function () {
     playSample(8);
 });
 // Drum Machine - SetIntervall sorgt für Wiederholung (kontinuierlich)
-function Intervall(Hihat, Kick, Snare) {
+var SEQ = ['./assets/hihat.mp3', './assets/kick.mp3', './assets/snare.mp3'];
+var INDEXSEQ = 0;
+function Intervall() {
     setInterval(function () {
-        playSample(Hihat);
-        playSample(Kick);
-        playSample(Snare);
+        var SOUND = new Audio(SEQ[INDEXSEQ]);
+        SOUND.play();
+        INDEXSEQ = INDEXSEQ + 1;
     }, 400);
 }
 document.getElementById('play-button').addEventListener('click', function () {
-    Intervall(4, 5, 8);
+    Intervall();
 });
 //# sourceMappingURL=TypeScript.js.map
