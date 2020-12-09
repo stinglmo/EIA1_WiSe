@@ -1,0 +1,162 @@
+html {
+    height: 100%;
+    
+}
+
+body {
+    height: 100%;
+    background-image: url("./Bilder/Background.jpg");
+    background-size: 130%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#DrumPad {
+    position: relative;
+    height: 490px;
+    width: 490px;
+}
+
+#Nummer1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-image: linear-gradient( #144040,  #031f1f);
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+#Nummer2 {
+    position: absolute;
+    top: 10px;
+    left: 170px;
+    background-image: linear-gradient(#146A6A,#043131);
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+#Nummer3 {
+    position: absolute;
+    top: 10px;
+    left: 330px;
+    background-image: linear-gradient(#00CBCB,#146A6A);
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+#Nummer4 {
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    background-image: linear-gradient(#485320,#262e0b);
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+#Nummer5 {
+    position: absolute;
+    top: 170px;
+    left: 170px;
+    background-image: linear-gradient(#1F7700,#485320) ;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+#Nummer6 {
+    position: absolute;
+    top: 170px;
+    left: 330px;
+    background-image: linear-gradient(#2DB42D,#1F7700);
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+#Nummer7 {
+    position: absolute;
+    top: 330px;
+    left: 10px;
+    background-image: linear-gradient(#FF6D3C,#cf4416) ;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+#Nummer8 {
+    position: absolute;
+    top: 330px;
+    left: 170px;
+    background-image: linear-gradient(#FFAD3C, #FF6D3C) ;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+#Nummer9 {
+    position: absolute;
+    top: 330px;
+    left: 330px;
+    background-image: linear-gradient(#FFED3C, #FFAD3C);
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+
+.Buttons {
+    position: relative;
+    width: 450px;
+    height: 150px;
+    top: 330px;
+    left: 110px;
+}
+.fa-play {
+    position: absolute;
+    top: 180px;
+    left: 105px;
+    color: #775b3f;
+    font-size: 70px;
+    
+}
+
+.fa-stop {
+    position: absolute;
+    top: 180px;
+    left: 105px;
+    color: #775b3f;
+    font-size: 70px;
+    
+}
+
+.fa-microphone {
+    position: absolute;
+    top: 180px;
+    left: 200px;
+    color: #775b3f;
+    font-size: 70px;
+}
+
+.fa-trash-alt {
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    color: #775b3f;
+    font-size: 70px;
+
+    
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.active {
+    color: #cf4416;
+}
