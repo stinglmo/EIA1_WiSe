@@ -113,13 +113,13 @@ body {
 .Buttons {
     position: relative;
     width: 450px;
-    height: 150px;
-    top: 330px;
+    height: 100px;
+    top: 490px;
     left: 110px;
 }
 .fa-play {
     position: absolute;
-    top: 180px;
+    top: 20px;
     left: 105px;
     color: #775b3f;
     font-size: 70px;
@@ -128,7 +128,7 @@ body {
 
 .fa-stop {
     position: absolute;
-    top: 180px;
+    top: 20px;
     left: 105px;
     color: #775b3f;
     font-size: 70px;
@@ -137,7 +137,7 @@ body {
 
 .fa-microphone {
     position: absolute;
-    top: 180px;
+    top: 20px;
     left: 200px;
     color: #775b3f;
     font-size: 70px;
@@ -145,7 +145,7 @@ body {
 
 .fa-trash-alt {
     position: absolute;
-    top: 180px;
+    top: 20px;
     left: 10px;
     color: #775b3f;
     font-size: 70px;
