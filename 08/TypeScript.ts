@@ -90,7 +90,7 @@ namespace NAME {
 
     let recording: boolean; 
 
-    function recBeat(index: number): void {
+    function recBeat(index: number): void { // Die Funktion recBeat rufe ich jeweils bei dem Click auf meine Button auf!
          if (recording == true) {
             leeresArray.push(index); // Index --> Beat wird im Array gespeichert
          }
@@ -102,7 +102,7 @@ namespace NAME {
     let interval: number;
     let x: number = 0;
 
-    function loop(recorded: boolean): void {
+    function playloop(recorded: boolean): void {
         if (recorded == true) {
             interval = setInterval(function(): void {
                 
@@ -128,21 +128,21 @@ namespace NAME {
 
     // Play Button - Sobald ich auf play drücke, bekommt 
     // 1. mein Play-Button die Klasse "is-hidden", und ist somit nicht mehr sichtbar!
-    // 2. der if - Codeblock von meiner loop - Funktion wird ausgeführt --> Meine Beatschleife wird in der Variablen "interval" gespeichert!
+    // 2. der if - Codeblock von meiner playloop - Funktion wird ausgeführt --> Meine Beatschleife wird in der Variablen "interval" gespeichert!
 
     button[0].addEventListener("click", function (): void {
         switchclasses(0, 1);
-        loop(true);
+        playloop(true);
 
     });
 
     // Stop - Button - Sobald ich auf stop drücke, wird 
     // 1. die Funktion switchclasses ausgeführt --> die im HTML-Dokument festgelegte Klasse "is-hidden" entfernt und das Icon ist damit sichtbar!
-    // 2. der else - Codeblock von meiner loop - Funktion ausgeführt --> Die Variable in der ich die Beatschleife gespeichert habe, wird (durch clearInterval) gelehrt!
+    // 2. der else - Codeblock von meiner playloop - Funktion ausgeführt --> Die Variable in der ich die Beatschleife gespeichert habe, wird (durch clearInterval) gelehrt!
 
     button[1].addEventListener("click", function (): void {
         switchclasses(1, 0);
-        loop(false);
+        playloop(false);
 
     });
 
@@ -165,7 +165,6 @@ namespace NAME {
 
     button[3].addEventListener("click", function(): void {
         leeresArray.length = 0;
-        console.log(leeresArray.length);
         
     });
 
