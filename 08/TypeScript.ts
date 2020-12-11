@@ -81,6 +81,7 @@ namespace NAME {
     button[1] = document.getElementById("stop");
     button[2] = document.getElementById("micro");
     button[3] = document.getElementById("trash");
+    button[4] = document.getElementById("zufallButton");
 
      // Leeres Array - um Beat drinnen zu speichern
 
@@ -102,7 +103,7 @@ namespace NAME {
     let interval: number;
     let x: number = 0;
 
-    function playloop(recorded: boolean): void {
+    function switchloop(recorded: boolean): void {
         if (recorded == true) {
             interval = setInterval(function(): void {
                 
@@ -110,7 +111,7 @@ namespace NAME {
                         playSample(leeresArray[x]); // Die x-te Stelle meines Arrays wird abgespielt!
                         x++;
                     } else {
-                        x = 0;
+                        x = 0; // Wenn der letzte Beat des Arrays abgespielt wurde, wird x wieder 0 gesetzt!
                     }
             },                     400);
         } else {
@@ -128,21 +129,21 @@ namespace NAME {
 
     // Play Button - Sobald ich auf play drücke, bekommt 
     // 1. mein Play-Button die Klasse "is-hidden", und ist somit nicht mehr sichtbar!
-    // 2. der if - Codeblock von meiner playloop - Funktion wird ausgeführt --> Meine Beatschleife wird in der Variablen "interval" gespeichert!
+    // 2. der if - Codeblock von meiner switchloop - Funktion wird ausgeführt --> Meine Beatschleife wird in der Variablen "interval" gespeichert!
 
     button[0].addEventListener("click", function (): void {
         switchclasses(0, 1);
-        playloop(true);
+        switchloop(true);
 
     });
 
     // Stop - Button - Sobald ich auf stop drücke, wird 
     // 1. die Funktion switchclasses ausgeführt --> die im HTML-Dokument festgelegte Klasse "is-hidden" entfernt und das Icon ist damit sichtbar!
-    // 2. der else - Codeblock von meiner playloop - Funktion ausgeführt --> Die Variable in der ich die Beatschleife gespeichert habe, wird (durch clearInterval) gelehrt!
+    // 2. der else - Codeblock von meiner switchloop - Funktion ausgeführt --> Die Variable in der ich die Beatschleife gespeichert habe, wird (durch clearInterval) gelehrt!
 
     button[1].addEventListener("click", function (): void {
         switchclasses(1, 0);
-        playloop(false);
+        switchloop(false);
 
     });
 
@@ -160,13 +161,60 @@ namespace NAME {
             recording = false;
         }
     });
- 
+    // Leeres Array - um den zufälligen Beat zu speichern
+
+    let arrayzufall: number[] = []; 
+
    // Delete - Button 
 
     button[3].addEventListener("click", function(): void {
         leeresArray.length = 0;
+        arrayzufall.length = 0;
         
     });
+
+    // Funktion - Zufallbeat - Button 
+    
+    let played: boolean; 
+    
+    function zufallBeat(): void { 
+             arrayzufall.push(Math.floor(Math.random() * Math.floor(9)));  
+             
+        }
+
+    button[4].addEventListener("click", function(): void {
+            if (played == true) {
+                zufallBeat();
+                playSample(arrayzufall[x]);
+                zufallloop(true);
+                
+            
+            } else {
+                played = false;
+
+            }
+        });
+            
+        
+    let intervallzufall: number;
+    let z: number = 0;
+    
+    function zufallloop(played: boolean): void {
+            if (played == true) {
+                intervallzufall = setInterval(function(): void {
+                    
+                        if ((z < 10)) {
+                            playSample(arrayzufall[x]); 
+                            z++;
+                        } else {
+                            z = 0; 
+                        }
+               
+                },                            400);
+            } else {
+                clearInterval(intervallzufall);
+            }
+        }
 
 
 }

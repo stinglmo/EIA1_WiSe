@@ -115,12 +115,12 @@ body {
     width: 450px;
     height: 100px;
     top: 490px;
-    left: 110px;
+    left: 60px;
 }
 .fa-play {
     position: absolute;
     top: 20px;
-    left: 105px;
+    left: 200px;
     color: #775b3f;
     font-size: 70px;
     
@@ -129,7 +129,7 @@ body {
 .fa-stop {
     position: absolute;
     top: 20px;
-    left: 105px;
+    left: 200px;
     color: #775b3f;
     font-size: 70px;
     
@@ -138,7 +138,7 @@ body {
 .fa-microphone {
     position: absolute;
     top: 20px;
-    left: 200px;
+    left: 300px;
     color: #775b3f;
     font-size: 70px;
 }
@@ -149,8 +149,15 @@ body {
     left: 10px;
     color: #775b3f;
     font-size: 70px;
-
     
+}
+
+.fa-play-circle {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    color: #775b3f;
+    font-size: 70px;
 }
 
 .is-hidden {
@@ -160,3 +167,4 @@ body {
 .active {
     color: #cf4416;
 }
+
