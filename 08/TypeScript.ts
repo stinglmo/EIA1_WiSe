@@ -161,60 +161,27 @@ namespace NAME {
             recording = false;
         }
     });
-    // Leeres Array - um den zufälligen Beat zu speichern
-
-    let arrayzufall: number[] = []; 
 
    // Delete - Button 
 
     button[3].addEventListener("click", function(): void {
         leeresArray.length = 0;
-        arrayzufall.length = 0;
         
     });
 
     // Funktion - Zufallbeat - Button 
     
-    let played: boolean; 
+    let i: number;
     
     function zufallBeat(): void { 
-             arrayzufall.push(Math.floor(Math.random() * Math.floor(9)));  
-             
+         for (i = 0; i <= 9; i++) { 
+        leeresArray.push(Math.floor(Math.random() * 10));  
+    }    
         }
 
     button[4].addEventListener("click", function(): void {
-            if (played == true) {
-                zufallBeat();
-                playSample(arrayzufall[x]);
-                zufallloop(true);
-                
-            
-            } else {
-                played = false;
-
-            }
-        });
-            
-        
-    let intervallzufall: number;
-    let z: number = 0;
-    
-    function zufallloop(played: boolean): void {
-            if (played == true) {
-                intervallzufall = setInterval(function(): void {
-                    
-                        if ((z < 10)) {
-                            playSample(arrayzufall[x]); 
-                            z++;
-                        } else {
-                            z = 0; 
-                        }
-               
-                },                            400);
-            } else {
-                clearInterval(intervallzufall);
-            }
-        }
-
+        zufallBeat();
+        switchloop(true);
+    });
 
 }

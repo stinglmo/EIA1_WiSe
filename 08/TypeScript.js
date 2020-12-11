@@ -122,45 +122,20 @@ var NAME;
             recording = false;
         }
     });
-    // Leeres Array - um den zufälligen Beat zu speichern
-    var arrayzufall = [];
     // Delete - Button 
     button[3].addEventListener("click", function () {
         leeresArray.length = 0;
-        arrayzufall.length = 0;
     });
     // Funktion - Zufallbeat - Button 
-    var played;
+    var i;
     function zufallBeat() {
-        arrayzufall.push(Math.floor(Math.random() * Math.floor(9)));
+        for (i = 0; i <= 9; i++) {
+            leeresArray.push(Math.floor(Math.random() * 10));
+        }
     }
     button[4].addEventListener("click", function () {
-        if (played == true) {
-            zufallBeat();
-            playSample(arrayzufall[x]);
-            zufallloop(true);
-        }
-        else {
-            played = false;
-        }
+        zufallBeat();
+        switchloop(true);
     });
-    var intervallzufall;
-    var z = 0;
-    function zufallloop(played) {
-        if (played == true) {
-            intervallzufall = setInterval(function () {
-                if ((z < 10)) {
-                    playSample(arrayzufall[x]);
-                    z++;
-                }
-                else {
-                    z = 0;
-                }
-            }, 400);
-        }
-        else {
-            clearInterval(intervallzufall);
-        }
-    }
 })(NAME || (NAME = {}));
 //# sourceMappingURL=TypeScript.js.map
