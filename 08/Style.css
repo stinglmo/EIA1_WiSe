@@ -168,3 +168,13 @@ body {
     color: #cf4416;
 }
 
+.Text {
+    position: relative;
+    font-size: 15px;
+    color: #775b3f;
+    top: 450px;
+    left: 70px;
+    background-color: #cac39a;
+    border-color: none;
+}
+

@@ -200,6 +200,9 @@ var NAME;
                     recording = false;
                 }
                 break;
+            case "i": // Löschen
+                leeresArray.length = 0;
+                break;
         }
     });
 })(NAME || (NAME = {}));
