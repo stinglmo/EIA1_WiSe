@@ -137,5 +137,70 @@ var NAME;
         zufallBeat();
         switchloop(true);
     });
+    // Funktion Tastatur
+    document.addEventListener("keydown", function (event) {
+        switch (event.key) {
+            case "r":
+                playSample(0);
+                recBeat(0);
+                break;
+            case "t":
+                playSample(1);
+                recBeat(1);
+                break;
+            case "z":
+                playSample(2);
+                recBeat(2);
+                break;
+            case "f":
+                playSample(3);
+                recBeat(3);
+                break;
+            case "g":
+                playSample(4);
+                recBeat(4);
+                break;
+            case "h":
+                playSample(5);
+                recBeat(5);
+                break;
+            case "c":
+                playSample(6);
+                recBeat(6);
+                break;
+            case "v":
+                playSample(7);
+                recBeat(7);
+                break;
+            case "b":
+                playSample(8);
+                recBeat(8);
+                break;
+            case "j": // Zufallbeat
+                zufallBeat();
+                switchloop(true);
+                break;
+            case "n": // Play
+                switchclasses(0, 1);
+                switchloop(true);
+                break;
+            case "m": // Pause
+                switchclasses(1, 0);
+                switchloop(false);
+                break;
+            case "k": // Rec - Start und Stop
+                if (button[2].classList.contains("inactive")) {
+                    button[2].classList.remove("inactive");
+                    button[2].classList.add("active");
+                    recording = true;
+                }
+                else {
+                    button[2].classList.remove("active");
+                    button[2].classList.add("inactive");
+                    recording = false;
+                }
+                break;
+        }
+    });
 })(NAME || (NAME = {}));
 //# sourceMappingURL=TypeScript.js.map
