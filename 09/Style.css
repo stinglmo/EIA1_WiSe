@@ -1,0 +1,98 @@
+html{
+    height: 100%;
+    background-image: linear-gradient(#eba1ad, #922222);
+    font-family: sans-serif;
+    background-size: auto;
+  }
+  
+  .main{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  h1{
+    text-align: center;
+    color: #fff;
+  }
+  form{
+    background-color: #fff;
+    padding: 15px;
+  }
+  input[type="text"]{
+    width: 310px;
+    height: 30px;
+    outline: 0;
+    border: none;
+    font-size: 1.5em;
+    background: #fff;
+    color: #198383;
+  }
+  button{
+    font-size: 1.5em;
+    color: #184968;
+    background-color: #fff;
+    outline: 0;
+    border: none;
+    width: 50px;
+  
+  }
+  .tasksBoard{
+    background-color: #fff;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    display: block;
+  
+  }
+
+  .is-hidden { 
+    display: none !important;
+
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    border-bottom: 1px solid #1b394b;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 1.3em;
+    color: #2f4f4f;
+  }
+
+  a {
+    float: right;
+    text-align: right;
+    color: #ff6161;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .delete {
+    height: 5px;
+    width: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .fa-trash-alt {
+    color: #ff6161;
+  }
+  
+  @media (max-width: 500px) {
+    .main {
+      margin: auto;
+      width: 100%;
+    }
+    input[type="text"] {
+      width: 80%;
+    }
+    button {
+      width: 10%;
+    }
+  }
