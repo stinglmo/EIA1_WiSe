@@ -21,19 +21,18 @@ function addTask(task) {
     var li = document.createElement("li");
     if (taskboard.classList.contains("is-hidden"))
         taskboard.classList.remove("is-hidden"); // Aufgabenboard erscheint
-    li.innerHTML = "<span class=\"delete\"><i class=\"fas fa-trash-alt\"></i></span><input class=\"doTodo\" type=\"checkbox\"><label>" + task + "</label>"; // Mit dem Dollerzeichen bestimme ich, dass sich die Checkbox ausschließlich auf dieses Label bezieht.
+    li.innerHTML = "<span class=\"delete\"><i class=\"fas fa-trash-alt\"></i></span><input class=\"doTodo\" type=\"checkbox\"><label>" + task + "</label>"; // Mit dem Dollerzeichen bestimme ich, dass sich die Checkbox ausschließlich auf dieses Label bezieht (Ist dann Javascript zwischen den geschweiften Klammern). Checkbox hat immer ein Label (In dem Fall Inhalt meiner Todo) Tamplate Literals -> durch ` ` kann ich HTML dazwischen schreiben
     ul.appendChild(li); // Damit immer ein neues hinzugefügt werden kann!
     for (var i = 0; i < doTodoElements.length; i++) {
         doTodoElements[i].addEventListener("click", tickTask, false);
-        numberoflistelement();
     }
     for (var i = 0; i < doTodoElements.length; i++) {
-        deleteTodoElements[i].addEventListener("click", deleteTask, false);
-        numberoflistelement();
+        deleteTodoElements[i].addEventListener("click", deleteTask, false); // delete Task wird nur durch Klich ausgeführt
     }
+    numberoflistelements();
 }
 // Anzeigen, wie viele todos noch existieren
-function numberoflistelement() {
+function numberoflistelements() {
     document.getElementById("number").innerHTML = "elements left: " + doTodoElements.length;
 }
 // ToDo löschen - // DOM - Manipulation durch Document.adoptNode()!
@@ -45,6 +44,7 @@ function deleteTask() {
     var remove = this.parentNode;
     var parentNode = remove.parentNode;
     parentNode.removeChild(remove); // Das nächste Kind wird entfernt
+    numberoflistelements();
 }
 // ToDo ankreuzen
 function tickTask(e) {
