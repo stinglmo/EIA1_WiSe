@@ -69,7 +69,7 @@ function deleteTask(): void {
 
 // ToDo ankreuzen
 
-function tickTask(e): void { // Was für ein Typ??
+function tickTask(e): void { // Was für ein Typ für mein Klickevent??
   const task: HTMLElement = e.target.nextSibling;
   if (e.target.checked) { // checked --> Checkbox ist angeklickt/Aufgabe wurde erledigt
     task.style.textDecoration = "line-through"; // ToDo wird durchgestrichen. Ist das okay, wenn ich es hier mache? Oder mit CSS-Klassen?
