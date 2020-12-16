@@ -69,7 +69,7 @@ function deleteTask(): void {
 
 // ToDo ankreuzen
 
-function tickTask(e: MouseEvent): void { // Was für ein Typ für mein Klickevent??
+function tickTask(e: MouseEvent): void { // Mein Klickevent hat dem Typ MouseEvent und ich muss mein EventTarget deshalb als HTMLInputElement deklarieren, weil es sich bei der checkbox um ein MouseEvent handelt!
   const task: HTMLInputElement = ((e.target as HTMLInputElement).nextSibling as HTMLInputElement);
   if ((e.target as HTMLInputElement).checked) { // checked --> Checkbox ist angeklickt/Aufgabe wurde erledigt
     task.style.textDecoration = "line-through"; // ToDo wird durchgestrichen. Ist das okay, wenn ich es hier mache? Oder mit CSS-Klassen?
