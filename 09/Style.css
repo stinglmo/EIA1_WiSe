@@ -78,10 +78,16 @@ html{
     width: 5px;
     color: #fff;
     cursor: pointer;
+    z-index: 1;
   }
 
   .fa-trash-alt {
     color: #ff6161;
+  }
+
+  #number {
+    color: #1b394b;
+    font-size: medium;
   }
   
   @media (max-width: 500px) {
