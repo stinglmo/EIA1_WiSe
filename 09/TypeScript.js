@@ -19,18 +19,17 @@ var taskboard = document.querySelector(".tasksBoard");
 function addTask(task) {
     var ul = document.querySelector("ul");
     var li = document.createElement("li");
-    if (taskboard.classList.contains("is-hidden")) {
+    if (taskboard.classList.contains("is-hidden"))
         taskboard.classList.remove("is-hidden"); // Aufgabenboard erscheint
-        li.innerHTML = "<span class=\"delete\"><i class=\"fas fa-trash-alt\"></i></span><input class=\"doTodo\" type=\"checkbox\"><label>" + task + "</label>"; // Mit dem Dollerzeichen bestimme ich, dass sich die Checkbox ausschließlich auf dieses Label bezieht.
-        ul.appendChild(li); // Damit immer ein neues hinzugefügt werden kann!
-        for (var i = 0; i < doTodoElements.length; i++) {
-            doTodoElements[i].addEventListener("click", tickTask, false);
-            numberoflistelement();
-        }
-        for (var i = 0; i < doTodoElements.length; i++) {
-            deleteTodoElements[i].addEventListener("click", deleteTask, false);
-            numberoflistelement();
-        }
+    li.innerHTML = "<span class=\"delete\"><i class=\"fas fa-trash-alt\"></i></span><input class=\"doTodo\" type=\"checkbox\"><label>" + task + "</label>"; // Mit dem Dollerzeichen bestimme ich, dass sich die Checkbox ausschließlich auf dieses Label bezieht.
+    ul.appendChild(li); // Damit immer ein neues hinzugefügt werden kann!
+    for (var i = 0; i < doTodoElements.length; i++) {
+        doTodoElements[i].addEventListener("click", tickTask, false);
+        numberoflistelement();
+    }
+    for (var i = 0; i < doTodoElements.length; i++) {
+        deleteTodoElements[i].addEventListener("click", deleteTask, false);
+        numberoflistelement();
     }
 }
 // Anzeigen, wie viele todos noch existieren

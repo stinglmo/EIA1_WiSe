@@ -29,7 +29,7 @@ let taskboard: HTMLElement = document.querySelector(".tasksBoard");
 function addTask(task: string): void {
   let ul: HTMLUListElement = document.querySelector("ul");
   let li: HTMLLIElement = document.createElement("li");
-  if (taskboard.classList.contains("is-hidden")) {
+  if (taskboard.classList.contains("is-hidden")) 
   taskboard.classList.remove("is-hidden"); // Aufgabenboard erscheint
   li.innerHTML = `<span class="delete"><i class="fas fa-trash-alt"></i></span><input class="doTodo" type="checkbox"><label>${task}</label>`; // Mit dem Dollerzeichen bestimme ich, dass sich die Checkbox ausschließlich auf dieses Label bezieht.
   ul.appendChild(li); // Damit immer ein neues hinzugefügt werden kann!
@@ -44,7 +44,7 @@ function addTask(task: string): void {
     numberoflistelement();
   }
 
-  }
+  
   
 }
 
