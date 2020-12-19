@@ -1,3 +1,5 @@
+
+  
 loadEvents();
 
 // Jedes Event auf der Seite neu laden
@@ -87,3 +89,5 @@ let ul: HTMLUListElement = document.querySelector("ul");
 function clearList(): void {
   ul.innerHTML = " ";
 }
+
+
