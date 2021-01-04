@@ -1,5 +1,4 @@
 
-  
 loadEvents();
 
 // Jedes Event auf der Seite neu laden

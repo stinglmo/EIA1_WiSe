@@ -1,26 +1,43 @@
 
-let todos: string[] = [];
-
 interface interfacename {
     content: string;
     checked: boolean;
 }
 
-let todo: interfacename = {
+let _todo: interfacename = {
     content: "",
     checked: true,
 
 }
+let todos: interfacename[] = [
+{
+    content: "Lorem",
+    checked: true
+},
+{
+    content: "Ipsum",
+    checked: false
+},
+{
+    content: "Dolor",
+    checked: false
+} 
+];
+
 
 var inputDOMElement: HTMLInputElement;
 var addButtonDOMElement: HTMLElement;
 var todosDOMElement: HTMLElement;
 var counterDOMElement: HTMLElement;
+var doneDOMElement: HTMLElement;
+var leftDOMElement: HTMLElement;
 
 inputDOMElement = document.querySelector("#inputTodo");
 addButtonDOMElement = document.querySelector("#addButton");
 todosDOMElement = document.querySelector("#todos");
 counterDOMElement = document.querySelector("#counter");
+doneDOMElement = document.querySelector("#done");
+leftDOMElement = document.querySelector("#left");
 
 
 addButtonDOMElement.addEventListener("click", addTodo);
@@ -37,33 +54,61 @@ function drawListToDOM(): void {
         let todo: HTMLElement = document.createElement("div");
         todo.classList.add("todo");
 
-        todo.innerHTML =  "<span class='check " + todos[index] + "'><i class='fas fa-check'></i></span>"
-                            + todos[index] +
-                            "<span class='trash fas fa-trash-alt'></span>";
-
-        
+        todo.innerHTML =  "<span class='check " + todos[index] + "'><i class='fas fa-check'></i>class='trash fas fa-trash-alt'></span>"
+      
         todo.querySelector(".check").addEventListener("click", function(): void {
             toggleCheckState(index);
         });
         todo.querySelector(".trash").addEventListener("click", function(): void {
             deleteTodo(index);
         });
-
+        // Bis hier hin wurde das neue Todo "zusammengebaut", jetzt wird es in den DOM gerendert.
         todosDOMElement.appendChild(todo);
     }
 
     updateCounter();
+    updatedone();
+    updateleft();
 }
+
+// ToDos Counter:
 
 function updateCounter(): void {
     counterDOMElement.innerHTML = todos.length + " in total";
 }
 
+function updatedone(): void {
+    var done = 0;
+    for (var index=0; index < todos.length; index++) {
+        if (todos[index].checked == true)
+        done++;
+    }
+    
+    doneDOMElement.innerHTML = done + " done";
+}
+
+function updateleft(): void {
+    var left = 0;
+    for (var index=0; index < todos.length; index++) {
+        if (todos[index].checked == false)
+        left++
+    }
+
+    leftDOMElement.innerHTML = left + " left";
+}
+
+// Funktion für neues ToDo:
+
 function addTodo(): void {
    
-    if (input.value != "") {
+    if (inputDOMElement.value != "") {
        
-        todos.push(inputDOMElement.value, false);
+        todos.push(
+            {
+            content: inputDOMElement.value,
+            checked: false
+            }
+        );
         
         inputDOMElement.value = "";
 
@@ -71,11 +116,14 @@ function addTodo(): void {
     }
 }
 
-function toggleCheckState(index: number, index: string): void {
-    todos[index] = !todos[index];
+// Funktion für checked bzw. unchecked:
+
+function toggleCheckState(index: number): void {
+    todos[index].checked = !todos[index].checked;
     drawListToDOM();
 }
 
+// Funktion Löschen: 
 
 function deleteTodo(index: number): void {
     todos.splice(index, 1);

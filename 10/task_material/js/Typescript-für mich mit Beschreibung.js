@@ -59,8 +59,8 @@ var forme;
              * Neues DIV-Element erstellen (würde auch mit innerHTML = "<div class='todo'></div>" gehen,
              * die Objekt-Instansierung ist aber übersichtlicher)
              */
-            var todo_1 = document.createElement("div");
-            todo_1.classList.add("todo");
+            var todo = document.createElement("div");
+            todo.classList.add("todo");
             /**
              * Jedes Todo besteht aus etwas Markup, also aus HTML-Elementen
              * wie der Check-Anzeige, dem ToDo-Text und dem Mülleimer
@@ -71,22 +71,22 @@ var forme;
              * ein Wert einer Variablen benötigt (bspw. für die CSS Klasse oder für den ToDo-Text),
              * hier muss die Zeichenkette unterbrochen werden.
              */
-            todo_1.innerHTML = "<span class='check " + todosChecked[index] + "'><i class='fas fa-check'></i></span>"
+            todo.innerHTML = "<span class='check " + todosChecked[index] + "'><i class='fas fa-check'></i></span>"
                 + todosText[index] +
                 "<span class='trash fas fa-trash-alt'></span>";
             // Zuweisen der Event-Listener für den Check- und den Trash-Button
-            todo_1.querySelector(".check").addEventListener("click", function () {
+            todo.querySelector(".check").addEventListener("click", function () {
                 // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
                 // übergeben, damit an der entsprechenden Stelle im Array der Wert geändert werden kann.
                 toggleCheckState(index);
             });
-            todo_1.querySelector(".trash").addEventListener("click", function () {
+            todo.querySelector(".trash").addEventListener("click", function () {
                 // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
                 // übergeben, damit die entsprechende Stelle im Array gelöscht werden kann.
                 deleteTodo(index);
             });
             // Bis hier hin wurde das neue Todo "zusammengebaut", jetzt wird es in den DOM gerendert.
-            todosDOMElement.appendChild(todo_1);
+            todosDOMElement.appendChild(todo);
         };
         // das ToDo-Array durchlaufen (iterieren) und Todo für Todo in den DOM schreiben
         for (var index = 0; index < todosText.length; index++) {
