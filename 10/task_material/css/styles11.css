@@ -99,3 +99,12 @@ h1 {
 .trash:hover {
     color: black;
 }
+
+
+.fa-microphone {
+    position: absolute;
+    top: 12px;
+    left: 420px;
+    color:#21106e;
+    font-size: 30px;
+}
