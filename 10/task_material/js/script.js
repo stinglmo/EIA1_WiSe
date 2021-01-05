@@ -1,7 +1,4 @@
-var _todo = {
-    content: "",
-    checked: true,
-};
+// Interface und Objekt in einem Array erstellen:
 var todos = [
     {
         content: "Lorem",
@@ -22,6 +19,7 @@ var todosDOMElement;
 var counterDOMElement;
 var doneDOMElement;
 var leftDOMElement;
+// Felder mit erledigten und offenen ToDos -> done und left
 inputDOMElement = document.querySelector("#inputTodo");
 addButtonDOMElement = document.querySelector("#addButton");
 todosDOMElement = document.querySelector("#todos");
@@ -30,12 +28,15 @@ doneDOMElement = document.querySelector("#done");
 leftDOMElement = document.querySelector("#left");
 addButtonDOMElement.addEventListener("click", addTodo);
 drawListToDOM();
+// Todos werden zusammengebaut
 function drawListToDOM() {
     todosDOMElement.innerHTML = "";
     var _loop_1 = function (index) {
         var todo = document.createElement("div");
         todo.classList.add("todo");
-        todo.innerHTML = "<span class='check " + todos[index] + "'><i class='fas fa-check'></i>class='trash fas fa-trash-alt'></span>";
+        todo.innerHTML = "<span class='check " + todos[index].checked + "'><i class='fas fa-check'></i></span>"
+            + todos[index].content +
+            "<span class='trash fas fa-trash-alt'></span>";
         todo.querySelector(".check").addEventListener("click", function () {
             toggleCheckState(index);
         });
@@ -56,6 +57,7 @@ function drawListToDOM() {
 function updateCounter() {
     counterDOMElement.innerHTML = todos.length + " in total";
 }
+// Done Counter:
 function updatedone() {
     var done = 0;
     for (var index = 0; index < todos.length; index++) {
@@ -64,6 +66,7 @@ function updatedone() {
     }
     doneDOMElement.innerHTML = done + " done";
 }
+// Left Counter: 
 function updateleft() {
     var left = 0;
     for (var index = 0; index < todos.length; index++) {
@@ -73,12 +76,14 @@ function updateleft() {
     leftDOMElement.innerHTML = left + " left";
 }
 // Funktion für neues ToDo:
+// push wird mit unshift ersetzt -> Neue Todo wird an den Anfang gesetzt!
 function addTodo() {
     if (inputDOMElement.value != "") {
-        todos.push({
+        todos.unshift({
             content: inputDOMElement.value,
             checked: false
         });
+        // Feld wird wieder geleehrt
         inputDOMElement.value = "";
         drawListToDOM();
     }
