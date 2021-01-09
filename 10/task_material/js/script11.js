@@ -80,16 +80,17 @@ var aufgabe11;
     }
     // Funktion für neues ToDo:
     // push wird mit unshift ersetzt -> Neue Todo wird an den Anfang gesetzt!
+    // checked -> false, weil die ToDo, die ich hinzufüge logischerweise noch nicht abgehakt ist.
     function addTodo() {
-        if (inputDOMElement.value != "") {
+        if (inputDOMElement.value != "") { /* Wenn im Feld was steht */
             todos.unshift({
                 content: inputDOMElement.value,
                 checked: false
             });
-            // Feld wird wieder geleehrt
-            inputDOMElement.value = "";
-            drawListToDOM();
         }
+        // Feld wird wieder geleehrt
+        inputDOMElement.value = "";
+        drawListToDOM();
     }
     // Funktion für checked bzw. unchecked:
     function toggleCheckState(index) {
@@ -101,5 +102,62 @@ var aufgabe11;
         todos.splice(index, 1);
         drawListToDOM();
     }
+    // Artyom - erstellen:
+    var artyom = new Artyom();
+    // Sprachassistenz - Funktion
+    document.querySelector("#micro").addEventListener("click", function () {
+        artyom.initialize({
+            debug: true,
+            continuous: true,
+            lang: "de-DE",
+            listen: true
+        });
+        // Kommentare hinzufügen:
+        // Arrow-Funktion (() =>) ersetzt function(): void
+        // indexes -> ist ein Arrray mit Textidentifizierungsdinger, die einen Befehl auslösen
+        // Alles was ich nach dem Befehl sage, wird in einem Array gespeichert 
+        // -> Das Sternchen ist repräsentativ für den wildcard-string
+        // .say -> Artyom gibt ihren Kommentar ab
+        artyom.addCommands([
+            {
+                indexes: ["Erstelle Aufgabe *"],
+                smart: true,
+                action: function (i, wildcard) {
+                    console.log("Neue Aufgabe wird erstellt: " + wildcard);
+                    console.log(wildcard);
+                    todos.unshift({
+                        content: wildcard,
+                        checked: false
+                    });
+                    drawListToDOM();
+                }
+            }
+        ]);
+        // Artyom starten -> mit .initialize
+        artyom.initialize({
+            debug: true,
+            continuous: true,
+            lang: "de-DE",
+            listen: true
+        }).then(function () {
+            console.log("Artyom wurde erfolgreich gestartet");
+            artyom.when("NOT_COMMAND_MATCHED"), function () {
+                artyom.say("Ich habe dich leider nicht verstanden!");
+            };
+        });
+    });
+    document.querySelector("#stop").addEventListener("click", function () {
+        // Stop Artyom
+        // fatality -> Erlaubt Deaktivierung
+        artyom.fatality().then(function () {
+            console.log("Artyom wurde erfolgreich gestoppt");
+            artyom.say("Eyyy - Ich wollte dir doch noch zuhören!!!");
+        });
+        // Restart Artyom 
+        artyom.restart().then(function () {
+            console.log("Artyom wurde erfolgreich neu gestartet");
+            artyom.say("Jetzt wurde ich neu gestartet");
+        });
+    });
 })(aufgabe11 || (aufgabe11 = {}));
 //# sourceMappingURL=script11.js.map

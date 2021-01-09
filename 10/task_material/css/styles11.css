@@ -104,7 +104,19 @@ h1 {
 .fa-microphone {
     position: absolute;
     top: 12px;
+    left: 390px;
+    color:#21106e;
+    font-size: 30px;
+}
+
+.fa-stop {
+    position: absolute;
+    top: 12px;
     left: 420px;
     color:#21106e;
     font-size: 30px;
+}
+
+#assistent {
+    color:#21106e;
 }
