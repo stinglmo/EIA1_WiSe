@@ -106,12 +106,6 @@ var aufgabe11;
     var artyom = new Artyom();
     // Sprachassistenz - Funktion
     document.querySelector("#micro").addEventListener("click", function () {
-        artyom.initialize({
-            debug: true,
-            continuous: true,
-            lang: "de-DE",
-            listen: true
-        });
         // Kommentare hinzufügen:
         // Arrow-Funktion (() =>) ersetzt function(): void
         // indexes -> ist ein Arrray mit Textidentifizierungsdinger, die einen Befehl auslösen
@@ -151,12 +145,7 @@ var aufgabe11;
         // fatality -> Erlaubt Deaktivierung
         artyom.fatality().then(function () {
             console.log("Artyom wurde erfolgreich gestoppt");
-            artyom.say("Eyyy - Ich wollte dir doch noch zuhören!!!");
-        });
-        // Restart Artyom 
-        artyom.restart().then(function () {
-            console.log("Artyom wurde erfolgreich neu gestartet");
-            artyom.say("Jetzt wurde ich neu gestartet");
+            artyom.say("Ich wollte dir doch noch zuhören, dann halt nicht");
         });
     });
 })(aufgabe11 || (aufgabe11 = {}));

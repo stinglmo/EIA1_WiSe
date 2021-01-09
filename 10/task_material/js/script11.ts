@@ -155,14 +155,7 @@ namespace aufgabe11 {
     // Sprachassistenz - Funktion
 
     document.querySelector("#micro").addEventListener("click", function () {
-
-        artyom.initialize({
-            debug: true,
-            continuous: true,
-            lang: "de-DE",
-            listen: true
-        })
-            
+ 
         // Kommentare hinzufügen:
         // Arrow-Funktion (() =>) ersetzt function(): void
         // indexes -> ist ein Arrray mit Textidentifizierungsdinger, die einen Befehl auslösen
@@ -213,15 +206,10 @@ namespace aufgabe11 {
         
             artyom.fatality().then(() => {
                 console.log("Artyom wurde erfolgreich gestoppt");
-                artyom.say("Eyyy - Ich wollte dir doch noch zuhören!!!")
+                artyom.say("Ich wollte dir doch noch zuhören, dann halt nicht")
             });
         
 
-        // Restart Artyom 
-        artyom.restart().then(() => {
-            console.log("Artyom wurde erfolgreich neu gestartet");
-            artyom.say("Jetzt wurde ich neu gestartet")
-        })
     })
    
 
